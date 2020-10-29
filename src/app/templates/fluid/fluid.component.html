@@ -1,0 +1,85 @@
+<!-- Content -->
+
+    <!-- Navigation -->
+    
+
+    <ul class="cd-hero-slider">
+
+
+
+        <!-- Page 2 Gallery Two -->
+        <li [class]="classe">
+            <div class="cd-full-width">
+                <div class="container-fluid js-tm-page-content" data-page-no="2" data-page-type="gallery">
+                    <div class="tm-img-gallery-container">
+                        <div class="tm-img-gallery gallery-two" >
+                            <div *ngFor="let image of gallery;let i = index">
+                                <div class="grid-item">
+                                    <figure class="effect-sadie">
+                                        <img [src]="image.sourceTn" alt="Image" class="img-fluid tm-img">
+                                        <figcaption>
+                                         <!--    <h2 class="tm-figure-title">{{image.title}} <strong>{{i + 1}}</strong></h2> -->
+                                            <p class="tm-figure-description">{{image.description}}</p>
+                                            <a [href]="image.source">View more</a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                            <!-- Gallery Two pop up connected with JS code below -->
+
+                          <!--   <div class="grid-item">
+                                <figure class="effect-sadie">
+                                    <img [src]="image.sourceTn" alt="Image" class="img-fluid tm-img">
+                                    <figcaption>
+                                        <h2 class="tm-figure-title">{{image.title}} <strong>{{i}}</strong></h2>
+                                        <p class="tm-figure-description">{{image.description}}</p>
+                                        <a [href]="image.source">View more</a>
+                                    </figcaption>
+                                </figure>
+                            </div> -->
+                            
+                           
+                           
+                            
+                            <div class="invisible grid-item">
+                                <figure class="effect-sadie">
+                                    <img src="assets/img/tm-img-06-tn.jpg" alt="Image" class="img-fluid tm-img">
+                                       
+                                </figure>
+                            </div>  
+                            <div class="invisible grid-item">
+                                <figure class="effect-sadie">
+                                    <img src="assets/img/tm-img-06-tn.jpg" alt="Image" class="img-fluid tm-img">
+                                       
+                                </figure>
+                            </div>  
+                            <div class="invisible grid-item">
+                                <figure class="effect-sadie">
+                                    <img src="assets/img/tm-img-06-tn.jpg" alt="Image" class="img-fluid tm-img">
+                                       
+                                </figure>
+                            </div>  
+                            <div class="invisible grid-item">
+                                <figure class="effect-sadie">
+                                    <img src="assets/img/tm-img-06-tn.jpg" alt="Image" class="img-fluid tm-img">
+                                       
+                                </figure>
+                            </div>  
+                          
+                           
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+
+       
+
+
+    </ul> <!-- .cd-hero-slider -->
+
+     <!-- .cd-hero -->
+
+
+<!-- Preloader, https://ihatetomatoes.net/create-custom-preloading-screen/ -->

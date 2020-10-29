@@ -1,3 +1,4 @@
+import { HierarchicalAnimation } from './route-animation';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,4 +8,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'pohl';
+
+  getDepth(outlet) {
+    return outlet.activatedRouteData['depth'];
+}
+
+goToPortfolio(){
+ 
+}
+
 }
