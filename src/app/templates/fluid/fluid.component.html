@@ -18,7 +18,7 @@
                                     <figure class="effect-sadie">
                                         <img [src]="image.sourceTn" alt="Image" class="img-fluid tm-img">
                                         <figcaption>
-                                         <!--    <h2 class="tm-figure-title">{{image.title}} <strong>{{i + 1}}</strong></h2> -->
+                                            <h2 class="tm-figure-title">{{image.title || ''}}</h2>
                                             <p class="tm-figure-description">{{image.description}}</p>
                                             <a [href]="image.source">View more</a>
                                         </figcaption>

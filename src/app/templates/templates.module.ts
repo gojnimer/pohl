@@ -1,6 +1,8 @@
+import { TemplateService } from './template.service';
 import { TemplatesRoutingModule } from './templates-routing.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
 import { FluidComponent } from './fluid/fluid.component';
 
 
@@ -9,7 +11,9 @@ import { FluidComponent } from './fluid/fluid.component';
   declarations: [FluidComponent],
   imports: [
     CommonModule,
-    TemplatesRoutingModule
-  ]
+    TemplatesRoutingModule,
+    HttpClientModule
+  ],
+  providers:[TemplateService]
 })
 export class TemplatesModule { }
